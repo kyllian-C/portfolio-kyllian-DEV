@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyllian Chouquet | Portfolio Développeur</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            premium: {
+              bg: '#0f0c1b',         /* Fond général violet très sombre / nuit */
+              surface: '#181428',    /* Blocs de contenu / cartes */
+              card: '#221c38',       /* Cartes internes */
+              border: '#362d59',     /* Bordures violettes subtiles */
+              violet: '#a855f7',     /* Violet premium principal */
+              violetHover: '#9333ea',/* Violet hover */
+              textMain: '#f3e8ff',   /* Texte clair teinté */
+              textMuted: '#c4b5fd'   /* Texte secondaire violet/gris */
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-premium-bg text-premium-textMain font-sans antialiased selection:bg-premium-violet selection:text-white">
+
+  <!-- HEADER / NAVIGATION DU SITE -->
+  <header class="bg-premium-surface border-b border-premium-border sticky top-0 z-50 shadow-xl backdrop-blur-md bg-opacity-90">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded bg-gradient-to-br from-purple-600 to-indigo-600 text-white flex items-center justify-center font-bold text-lg shadow-md">
+          KC
+        </div>
+        <div>
+          <a href="#" class="font-bold text-base text-white block leading-none">Kyllian Chouquet</a>
+          <span class="text-xs text-premium-textMuted">Portfolio Développeur BTS SIO SLAM</span>
+        </div>
+      </div>
+      
+      <!-- Menu de navigation -->
+      <nav class="hidden md:flex items-center space-x-1 text-sm font-medium text-slate-300">
+        <a href="#presentation" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Accueil</a>
+        <a href="#competences" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Compétences</a>
+        <a href="#pro" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Projet Pro</a>
+        <a href="#scolaire" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Projets BTS</a>
+        <a href="#veille" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Veille TDD</a>
+      </nav>
+
+      <div>
+        <a href="mailto:kyllian.chouquetpro@gmail.com" class="text-xs font-semibold px-4 py-2 rounded bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-500 hover:to-indigo-500 transition-all shadow-md">
+          Me Contacter
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENU DU SITE -->
+  <main class="max-w-6xl mx-auto px-6 py-10 space-y-16">
+
+    <!-- BLOC HERO / ACCUEIL -->
+    <section id="presentation" class="bg-premium-surface rounded-2xl border border-premium-border p-8 md:p-12 shadow-2xl space-y-6 relative overflow-hidden">
+      <div class="absolute -right-20 -top-20 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/60 text-premium-violet text-xs font-semibold border border-purple-800/50">
+        <span class="w-2 h-2 rounded-full bg-premium-violet animate-pulse"></span>
+        Recherche de stage Développeur IT (18/05 - 19/06)
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
+        Allier la rigueur du sur-mesure industriel à la précision du code web.
+      </h1>
+      <p class="text-premium-textMuted text-base md:text-lg leading-relaxed">
+        Étudiant en 2ᵉ année de <strong class="text-white">BTS SIO option SLAM</strong>, j'exerce en reconversion après 3 ans passés dans l'industrie de la menuiserie aluminium (Bestalu). Cette expérience forge ma méthode de travail quotidienne : respect strict des normes, sens du détail et engagement sur les livrables.
+      </p>
+      <p class="text-premium-textMuted text-base md:text-lg leading-relaxed">
+        Aujourd'hui, j'applique cette exigence à la conception d'applications web, comme l'illustre mon expérience chez <strong class="text-white">Goron Systèmes</strong> où j'ai conduit le développement complet et la mise en production d'un portail interne sous Next.js et Linux.
+      </p>
+      <div class="pt-4 flex flex-wrap gap-4">
+        <a href="#pro" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold text-sm hover:from-purple-500 hover:to-indigo-500 transition-all shadow-lg shadow-purple-900/30">
+          Explorer mes réalisations
+        </a>
+        <a href="#veille" class="px-5 py-2.5 rounded-xl bg-premium-card text-white font-medium text-sm hover:bg-[#2c2447] transition-colors border border-premium-border">
+          Consulter ma veille TDD
+        </a>
+      </div>
+    </section>
+
+    <!-- BLOC COMPÉTENCES -->
+    <section id="competences" class="space-y-6">
+      <div class="border-b border-premium-border pb-3">
+        <h2 class="text-2xl font-bold text-white">Compétences & Preuves Techniques</h2>
+        <p class="text-sm text-premium-textMuted mt-1">Blocs de compétences adossés à des réalisations concrètes.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Colonne 1 -->
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3 hover:border-purple-500/50 transition-all">
+          <div class="flex items-center gap-3 text-purple-400">
+            <i data-lucide="layout" class="w-6 h-6"></i>
+            <h3 class="font-bold text-lg text-white">Front-End & Ergonomie</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-xs font-semibold text-purple-200">
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">React</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Next.js</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Tailwind CSS</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Bootstrap</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Visily</span>
+          </div>
+          <p class="text-sm text-premium-textMuted">
+            <strong class="text-white">Preuve :</strong> Création de wireframes fonctionnels sous Visily et développement de composants réactifs avec capture dynamique de signatures sur Canvas.
+          </p>
+        </div>
+
+        <!-- Colonne 2 -->
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3 hover:border-purple-500/50 transition-all">
+          <div class="flex items-center gap-3 text-emerald-400">
+            <i data-lucide="database" class="w-6 h-6"></i>
+            <h3 class="font-bold text-lg text-white">Back-End & Données</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-xs font-semibold text-purple-200">
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">PHP (CRUD)</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">MySQL</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">SQLite</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Prisma</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">jsPDF</span>
+          </div>
+          <p class="text-sm text-premium-textMuted">
+            <strong class="text-white">Preuve :</strong> Modélisation relationnelle de données, sécurisation des requêtes préparées et génération automatisée de documents PDF réglementaires.
+          </p>
+        </div>
+
+        <!-- Colonne 3 -->
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3 hover:border-purple-500/50 transition-all">
+          <div class="flex items-center gap-3 text-indigo-400">
+            <i data-lucide="server" class="w-6 h-6"></i>
+            <h3 class="font-bold text-lg text-white">Systèmes & DevOps</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-xs font-semibold text-purple-200">
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Linux Debian CLI</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Proxmox</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Nginx</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">PM2</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Git/GitHub</span>
+          </div>
+          <p class="text-sm text-premium-textMuted">
+            <strong class="text-white">Preuve :</strong> Déploiement complet en production sur machines virtuelles Proxmox, reverse-proxy Nginx, PM2 et gestion de versioning Git.
+          </p>
+        </div>
+
+        <!-- Colonne 4 -->
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3 hover:border-purple-500/50 transition-all">
+          <div class="flex items-center gap-3 text-amber-400">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+            <h3 class="font-bold text-lg text-white">Sécurité & Postes</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-xs font-semibold text-purple-200">
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">KeePass</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">VPN</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">ANSSI</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">PIX</span>
+          </div>
+          <p class="text-sm text-premium-textMuted">
+            <strong class="text-white">Preuve :</strong> Préparation et sécurisation de postes techniciens, gestion des habilitations VPN et centralisation des coffres de mots de passe KeePass.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC PROJET PRO (GORON SYSTÈMES) -->
+    <section id="pro" class="bg-premium-surface rounded-2xl border border-premium-border p-8 shadow-2xl space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-premium-border pb-4">
+        <div>
+          <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Entreprise : GORON Systèmes (Saint-Étienne-du-Rouvray)</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mt-1">Portail de Dématérialisation & Gestion des Congés</h2>
+        </div>
+        <span class="px-3 py-1 bg-purple-950 text-purple-300 border border-purple-800 text-xs font-semibold rounded-full self-start md:self-auto shadow-sm">
+          Projet Professionnel Validé
+        </span>
+      </div>
+
+      <!-- Structure Méthode STAR -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+        <div class="space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-premium-card text-purple-400 flex items-center justify-center text-xs font-bold border border-premium-border">S</span> Situation & Problème
+          </h4>
+          <p class="text-premium-textMuted leading-relaxed">
+            Les demandes de congés dépendaient d'un circuit papier source de retards administratifs et de risques d'erreurs de décompte manuel.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-premium-card text-purple-400 flex items-center justify-center text-xs font-bold border border-premium-border">T</span> Tâche Assignée
+          </h4>
+          <p class="text-premium-textMuted leading-relaxed">
+            Concevoir et déployer une application interne permettant de soumettre des demandes, de calculer automatiquement les absences, d'apposer une signature sur canvas et d'exporter des PDF réglementaires.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-premium-card text-purple-400 flex items-center justify-center text-xs font-bold border border-premium-border">A</span> Actions Réalisées
+          </h4>
+          <ul class="text-premium-textMuted space-y-1 list-disc list-inside">
+            <li>Maquettage UI/UX sous Visily conforme à la charte.</li>
+            <li>Développement Front-End sous Next.js, React et Tailwind CSS.</li>
+            <li>Intégration d'un module de signature tactile sur canvas et export dynamique via jsPDF.</li>
+            <li>Déploiement sur VM Debian (Proxmox), configuration Nginx et PM2.</li>
+            <li>Support technique : sécurisation de postes, VPN et KeePass.</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-premium-card text-purple-400 flex items-center justify-center text-xs font-bold border border-premium-border">R</span> Résultats & Impact
+          </h4>
+          <p class="text-premium-textMuted leading-relaxed">
+            Suppression complète du support papier, fiabilité absolue des calculs légaux et réduction drastique du temps de validation des congés.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC PROJETS SCOLAIRES BTS -->
+    <section id="scolaire" class="space-y-6">
+      <div class="border-b border-premium-border pb-3">
+        <h2 class="text-2xl font-bold text-white">Projets Académiques (BTS SIO SLAM)</h2>
+        <p class="text-sm text-premium-textMuted mt-1">Réalisations conduites dans le cadre du cursus de formation.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3">
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-purple-950 text-purple-300 border border-purple-800">Application de Gestion</span>
+          <h3 class="text-lg font-bold text-white">Application Python & MySQL</h3>
+          <p class="text-sm text-premium-textMuted leading-relaxed">
+            Développement d'une application de bureau connectée à une base de données relationnelle MySQL, menée en équipe avec une répartition rigoureuse des tâches sous GitHub.
+          </p>
+          <div class="pt-2 border-t border-premium-border flex justify-between text-xs text-premium-textMuted">
+            <span>Stack : Python, MySQL, GitHub</span>
+            <span class="font-semibold text-purple-400">Livrable : Code Source & MCD</span>
+          </div>
+        </div>
+
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3">
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-800">Site Web Dynamique</span>
+          <h3 class="text-lg font-bold text-white">Portail Web & Rôles Utilisateurs</h3>
+          <p class="text-sm text-premium-textMuted leading-relaxed">
+            Plateforme web interactive conçue avec HTML/CSS et Bootstrap, intégrant une base de données et un système strict de gestion des droits et des rôles utilisateurs (RBAC).
+          </p>
+          <div class="pt-2 border-t border-premium-border flex justify-between text-xs text-premium-textMuted">
+            <span>Stack : HTML/CSS, Bootstrap, SQL</span>
+            <span class="font-semibold text-purple-400">Livrable : Application Web</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC VEILLE INFORMATIQUE TDD -->
+    <section id="veille" class="space-y-6">
+      <div class="border-b border-premium-border pb-3">
+        <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-xs font-bold mb-2 shadow-sm">
+          Sujet Officiel BTS SIO
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Veille Technologique : Test-Driven Development (TDD)</h2>
+        <p class="text-sm text-premium-textMuted mt-1">Élever la qualité logicielle et réduire la dette technique par les tests unitaires.</p>
+      </div>
+
+      <div class="bg-premium-surface rounded-2xl border border-premium-border p-6 shadow-2xl space-y-6">
+        <h3 class="font-bold text-white text-lg">Le Cycle Fondamental : Red - Green - Refactor</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+          <div class="p-4 rounded-xl bg-red-950/30 border border-red-900/50 space-y-2">
+            <span class="inline-block px-2.5 py-0.5 bg-red-600 text-white rounded font-bold text-xs">1. RED</span>
+            <h4 class="font-bold text-white text-sm">Écrire un test qui échoue</h4>
+            <p class="text-xs text-premium-textMuted">Formalisation précise du besoin métier en amont de toute écriture de code.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-emerald-950/30 border border-emerald-900/50 space-y-2">
+            <span class="inline-block px-2.5 py-0.5 bg-emerald-600 text-white rounded font-bold text-xs">2. GREEN</span>
+            <h4 class="font-bold text-white text-sm">Code minimaliste</h4>
+            <p class="text-xs text-premium-textMuted">Écriture du code strict nécessaire pour valider le test au vert.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-purple-950/30 border border-purple-900/50 space-y-2">
+            <span class="inline-block px-2.5 py-0.5 bg-purple-600 text-white rounded font-bold text-xs">3. REFACTOR</span>
+            <h4 class="font-bold text-white text-sm">Factoriser & Nettoyer</h4>
+            <p class="text-xs text-premium-textMuted">Optimisation de l'architecture logicielle en conservant la couverture de tests.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-premium-border text-sm">
+          <div class="space-y-1">
+            <strong class="text-white block">Synergie avec l'IA Générative :</strong>
+            <p class="text-premium-textMuted text-xs">Le TDD sert de garde-fou impératif face aux assistants de code : le développeur spécifie par le test, l'IA génère la solution minimale validée.</p>
+          </div>
+          <div class="space-y-1">
+            <strong class="text-white block">Outillage Moderne :</strong>
+            <p class="text-premium-textMuted text-xs">Utilisation d'environnements rapides comme Vitest/Jest (React), PyTest (Python) ou PHPUnit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- INITIALISATION DES ICONES -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
