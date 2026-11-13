@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyllian Chouquet | Portfolio Développeur</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            premium: {
+              bg: '#0f0c1b',         /* Fond général violet très sombre / nuit */
+              surface: '#181428',    /* Blocs de contenu / cartes */
+              card: '#221c38',       /* Cartes internes */
+              border: '#362d59',     /* Bordures violettes subtiles */
+              violet: '#a855f7',     /* Violet premium principal */
+              violetHover: '#9333ea',/* Violet hover */
+              textMain: '#f3e8ff',   /* Texte clair teinté */
+              textMuted: '#c4b5fd'   /* Texte secondaire violet/gris */
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-premium-bg text-premium-textMain font-sans antialiased selection:bg-premium-violet selection:text-white">
+
+  <!-- HEADER / NAVIGATION DU SITE -->
+  <header class="bg-premium-surface border-b border-premium-border sticky top-0 z-50 shadow-xl backdrop-blur-md bg-opacity-90">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded bg-gradient-to-br from-purple-600 to-indigo-600 text-white flex items-center justify-center font-bold text-lg shadow-md">
+          KC
+        </div>
+        <div>
+          <a href="#" class="font-bold text-base text-white block leading-none">Kyllian Chouquet</a>
+          <span class="text-xs text-premium-textMuted">Portfolio Développeur BTS SIO SLAM</span>
+        </div>
+      </div>
+      
+      <!-- Menu de navigation -->
+      <nav class="hidden md:flex items-center space-x-1 text-sm font-medium text-slate-300">
+        <a href="#presentation" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Accueil</a>
+        <a href="#competences" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Compétences</a>
+        <a href="#pro" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Projet Pro</a>
+        <a href="#scolaire" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Projets BTS</a>
+        <a href="#veille" class="px-3 py-2 rounded hover:bg-premium-card hover:text-premium-violet transition-colors">Veille TDD</a>
+      </nav>
+
+      <div>
+        <a href="contact.html" class="text-xs font-semibold px-4 py-2 rounded bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-500 hover:to-indigo-500 transition-all shadow-md">
+          Me Contacter
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENU DU SITE -->
+  <main class="max-w-6xl mx-auto px-6 py-10 space-y-16">
+
+    <!-- BLOC HERO / ACCUEIL -->
+    <section id="presentation" class="bg-premium-surface rounded-2xl border border-premium-border p-8 md:p-12 shadow-2xl space-y-6 relative overflow-hidden">
+      <div class="absolute -right-20 -top-20 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/60 text-premium-violet text-xs font-semibold border border-purple-800/50">
+        <span class="w-2 h-2 rounded-full bg-premium-violet animate-pulse"></span>
+        Recherche de stage Développeur IT (18/05 - 19/06)
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
+        Allier la rigueur du sur-mesure industriel à la précision du code web.
+      </h1>
+      <p class="text-premium-textMuted text-base md:text-lg leading-relaxed">
+        Étudiant en 2ᵉ année de <strong class="text-white">BTS SIO option SLAM</strong>, j'exerce en reconversion après 3 ans passés dans l'industrie de la menuiserie aluminium (Bestalu). Cette expérience forge ma méthode de travail quotidienne : respect strict des normes, sens du détail et engagement sur les livrables.
+      </p>
+      <p class="text-premium-textMuted text-base md:text-lg leading-relaxed">
+        Aujourd'hui, j'applique cette exigence à la conception d'applications web, comme l'illustre mon expérience chez <strong class="text-white">Goron Systèmes</strong> où j'ai conduit le développement complet et la mise en production d'un portail interne sous Next.js et Linux.
+      </p>
+      <div class="pt-4 flex flex-wrap gap-4">
+        <a href="#pro" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold text-sm hover:from-purple-500 hover:to-indigo-500 transition-all shadow-lg shadow-purple-900/30">
+          Explorer mes réalisations
+        </a>
+        <a href="#veille" class="px-5 py-2.5 rounded-xl bg-premium-card text-white font-medium text-sm hover:bg-[#2c2447] transition-colors border border-premium-border">
+          Consulter ma veille TDD
+        </a>
+        <a href="https://drive.google.com/file/d/1DzjHzHdJ2B43YoNQHG1vIbQquhS0FsNJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-premium-card text-white font-medium text-sm hover:bg-[#2c2447] transition-colors border border-premium-border">
+          <i data-lucide="file-text" class="w-4 h-4"></i>
+          Consulter mon CV
+        </a>
+      </div>
+    </section>
+
+    <!-- BLOC COMPÉTENCES -->
+    <section id="competences" class="space-y-6">
+      <div class="border-b border-premium-border pb-3">
+        <h2 class="text-2xl font-bold text-white">Compétences & Preuves Techniques</h2>
+        <p class="text-sm text-premium-textMuted mt-1">Blocs de compétences adossés à des réalisations concrètes.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Colonne 1 -->
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3 hover:border-purple-500/50 transition-all">
+          <div class="flex items-center gap-3 text-purple-400">
+            <i data-lucide="layout" class="w-6 h-6"></i>
+            <h3 class="font-bold text-lg text-white">Front-End & Ergonomie</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-xs font-semibold text-purple-200">
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">React</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Next.js</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Tailwind CSS</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Bootstrap</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Visily</span>
+          </div>
+          <p class="text-sm text-premium-textMuted">
+            <strong class="text-white">Preuve :</strong> Création de wireframes fonctionnels sous Visily et développement de composants réactifs avec capture dynamique de signatures sur Canvas.
+          </p>
+        </div>
+
+        <!-- Colonne 2 -->
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3 hover:border-purple-500/50 transition-all">
+          <div class="flex items-center gap-3 text-emerald-400">
+            <i data-lucide="database" class="w-6 h-6"></i>
+            <h3 class="font-bold text-lg text-white">Back-End & Données</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-xs font-semibold text-purple-200">
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">PHP (CRUD)</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">MySQL</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">SQLite</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Prisma</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">jsPDF</span>
+          </div>
+          <p class="text-sm text-premium-textMuted">
+            <strong class="text-white">Preuve :</strong> Modélisation relationnelle de données, sécurisation des requêtes préparées et génération automatisée de documents PDF réglementaires.
+          </p>
+        </div>
+
+        <!-- Colonne 3 -->
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3 hover:border-purple-500/50 transition-all">
+          <div class="flex items-center gap-3 text-indigo-400">
+            <i data-lucide="server" class="w-6 h-6"></i>
+            <h3 class="font-bold text-lg text-white">Systèmes & DevOps</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-xs font-semibold text-purple-200">
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Linux Debian CLI</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Proxmox</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Nginx</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">PM2</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">Git/GitHub</span>
+          </div>
+          <p class="text-sm text-premium-textMuted">
+            <strong class="text-white">Preuve :</strong> Déploiement complet en production sur machines virtuelles Proxmox, reverse-proxy Nginx, PM2 et gestion de versioning Git.
+          </p>
+        </div>
+
+        <!-- Colonne 4 -->
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3 hover:border-purple-500/50 transition-all">
+          <div class="flex items-center gap-3 text-amber-400">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+            <h3 class="font-bold text-lg text-white">Sécurité & Postes</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-xs font-semibold text-purple-200">
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">KeePass</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">VPN</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">ANSSI</span>
+            <span class="bg-premium-card px-2.5 py-1 rounded-lg border border-premium-border">PIX</span>
+          </div>
+          <p class="text-sm text-premium-textMuted">
+            <strong class="text-white">Preuve :</strong> Préparation et sécurisation de postes techniciens, gestion des habilitations VPN et centralisation des coffres de mots de passe KeePass.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC PROJET PRO (GORON SYSTÈMES) -->
+    <section id="pro" class="bg-premium-surface rounded-2xl border border-premium-border p-8 shadow-2xl space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-premium-border pb-4">
+        <div>
+          <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Entreprise : GORON Systèmes (Saint-Étienne-du-Rouvray)</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mt-1">Portail de Dématérialisation & Gestion des Congés</h2>
+        </div>
+        <span class="px-3 py-1 bg-purple-950 text-purple-300 border border-purple-800 text-xs font-semibold rounded-full self-start md:self-auto shadow-sm">
+          Projet Professionnel Validé
+        </span>
+      </div>
+
+      <!-- Structure Méthode STAR -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+        <div class="space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-premium-card text-purple-400 flex items-center justify-center text-xs font-bold border border-premium-border">S</span> Situation & Problème
+          </h4>
+          <p class="text-premium-textMuted leading-relaxed">
+            Les demandes de congés dépendaient d'un circuit papier source de retards administratifs et de risques d'erreurs de décompte manuel.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-premium-card text-purple-400 flex items-center justify-center text-xs font-bold border border-premium-border">T</span> Tâche Assignée
+          </h4>
+          <p class="text-premium-textMuted leading-relaxed">
+            Concevoir et déployer une application interne permettant de soumettre des demandes, de calculer automatiquement les absences, d'apposer une signature sur canvas et d'exporter des PDF réglementaires.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-premium-card text-purple-400 flex items-center justify-center text-xs font-bold border border-premium-border">A</span> Actions Réalisées
+          </h4>
+          <ul class="text-premium-textMuted space-y-1 list-disc list-inside">
+            <li>Maquettage UI/UX sous Visily conforme à la charte.</li>
+            <li>Développement Front-End sous Next.js, React et Tailwind CSS.</li>
+            <li>Intégration d'un module de signature tactile sur canvas et export dynamique via jsPDF.</li>
+            <li>Déploiement sur VM Debian (Proxmox), configuration Nginx et PM2.</li>
+            <li>Support technique : sécurisation de postes, VPN et KeePass.</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-premium-card text-purple-400 flex items-center justify-center text-xs font-bold border border-premium-border">R</span> Résultats & Impact
+          </h4>
+          <p class="text-premium-textMuted leading-relaxed">
+            Suppression complète du support papier, fiabilité absolue des calculs légaux et réduction drastique du temps de validation des congés.
+          </p>
+        </div>
+      </div>
+      <a href="https://docs.google.com/document/d/1rjcj0ItKgdrHjdDSUSz_WRVMu2t5FwWBp765rYG1GBE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold text-sm hover:from-purple-500 hover:to-indigo-500 transition-all shadow-lg shadow-purple-900/30">
+        <i data-lucide="external-link" class="w-4 h-4"></i>
+        Voir le formulaire de congé (preuve)
+      </a>
+    </section>
+
+    <!-- BLOC PROJETS SCOLAIRES BTS -->
+    <section id="scolaire" class="space-y-6">
+      <div class="border-b border-premium-border pb-3">
+        <h2 class="text-2xl font-bold text-white">Projets Académiques (BTS SIO SLAM)</h2>
+        <p class="text-sm text-premium-textMuted mt-1">Réalisations conduites dans le cadre du cursus de formation.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3">
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-purple-950 text-purple-300 border border-purple-800">Application de Gestion</span>
+          <h3 class="text-lg font-bold text-white">Application Python & MySQL</h3>
+          <p class="text-sm text-premium-textMuted leading-relaxed">
+            Développement d'une application de bureau connectée à une base de données relationnelle MySQL, menée en équipe avec une répartition rigoureuse des tâches sous GitHub.
+          </p>
+          <div class="pt-2 border-t border-premium-border flex justify-between text-xs text-premium-textMuted">
+            <span>Stack : Python, MySQL, GitHub</span>
+            <span class="font-semibold text-purple-400">Livrable : Code Source & MCD</span>
+          </div>
+        </div>
+
+        <div class="bg-premium-surface p-6 rounded-2xl border border-premium-border shadow-lg space-y-3">
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-800">Site Web Dynamique</span>
+          <h3 class="text-lg font-bold text-white">Portail Web & Rôles Utilisateurs</h3>
+          <p class="text-sm text-premium-textMuted leading-relaxed">
+            Plateforme web interactive conçue avec HTML/CSS et Bootstrap, intégrant une base de données et un système strict de gestion des droits et des rôles utilisateurs (RBAC).
+          </p>
+          <div class="pt-2 border-t border-premium-border flex justify-between text-xs text-premium-textMuted">
+            <span>Stack : HTML/CSS, Bootstrap, SQL</span>
+            <span class="font-semibold text-purple-400">Livrable : Application Web</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC VEILLE TECHNOLOGIQUE -->
+    <section id="veille" aria-labelledby="veille-title" class="space-y-6 scroll-mt-24">
+      <article class="space-y-6">
+        <header class="border-b border-premium-border pb-5">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-xs font-bold mb-3 shadow-sm">
+            Veille technologique · Génie logiciel
+          </div>
+          <h2 id="veille-title" class="text-2xl md:text-3xl font-bold text-white leading-tight">
+            Le Test-Driven Development (TDD) à l'ère de l'IA générative : garde-fou indispensable ou pratique dépassée ?
+          </h2>
+          <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-premium-textMuted">
+            <p><span class="font-semibold text-white">Auteur associé au TDD :</span> Kent Beck</p>
+            <p><span class="font-semibold text-white">Domaine :</span> Génie logiciel / Qualité logicielle &amp; IA</p>
+            <p><span class="font-semibold text-white">Publication :</span> <time datetime="2026-11">Novembre 2026</time></p>
+          </div>
+          <ul aria-label="Mots-clés" class="mt-4 flex flex-wrap gap-2">
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">TDD</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">Test-Driven Development</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">Red-Green-Refactor</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">CI/CD</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">Clean Code</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">IA Générative</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">PHPUnit</li>
+          </ul>
+        </header>
+
+        <section aria-labelledby="veille-question" class="rounded-2xl border border-purple-800/60 bg-purple-950/30 p-6 md:p-8">
+          <h3 id="veille-question" class="text-xs font-bold uppercase tracking-wider text-purple-300">Problématique</h3>
+          <blockquote class="mt-3 text-lg md:text-xl font-semibold leading-relaxed text-white">
+            « Avec l'arrivée des outils de génération de code par intelligence artificielle (GitHub Copilot, Cursor, LLM), en quoi le TDD reste-t-il indispensable en entreprise pour vérifier et fiabiliser les applications ? »
+          </blockquote>
+        </section>
+
+        <section aria-labelledby="veille-method" class="space-y-4">
+          <div>
+            <h3 id="veille-method" class="text-xl font-bold text-white">Méthodologie de collecte</h3>
+            <p class="mt-1 text-sm text-premium-textMuted">Une veille croisée pour suivre les pratiques, les outils et les retours du terrain.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-premium-surface p-5 rounded-2xl border border-premium-border space-y-2">
+              <span class="inline-flex items-center gap-2 text-purple-300"><i data-lucide="rss" aria-hidden="true" class="w-5 h-5"></i><strong class="text-white">Agrégateur RSS · Feedly</strong></span>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Suivi continu des publications d'experts (Kent Beck, Martin Fowler, Uncle Bob, InfoQ) et des releases GitHub PHPUnit.</p>
+            </div>
+            <div class="bg-premium-surface p-5 rounded-2xl border border-premium-border space-y-2">
+              <span class="inline-flex items-center gap-2 text-purple-300"><i data-lucide="bell" aria-hidden="true" class="w-5 h-5"></i><strong class="text-white">Alertes automatisées · Google Alerts</strong></span>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Requêtes booléennes ciblées sur le TDD, le refactoring et l'impact des LLM sur les tests logiciels.</p>
+            </div>
+            <div class="bg-premium-surface p-5 rounded-2xl border border-premium-border space-y-2">
+              <span class="inline-flex items-center gap-2 text-purple-300"><i data-lucide="users" aria-hidden="true" class="w-5 h-5"></i><strong class="text-white">Veille communautaire</strong></span>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Analyse des retours d'expérience terrain sur Ministry of Testing et des discussions techniques sur Reddit.</p>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="veille-evolutions" class="space-y-4">
+          <div>
+            <h3 id="veille-evolutions" class="text-xl font-bold text-white">Synthèse des évolutions récentes</h3>
+            <p class="mt-1 text-sm text-premium-textMuted">Trois constats au croisement de l'IA générative et de la qualité logicielle.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <article class="bg-premium-surface p-5 rounded-2xl border border-premium-border shadow-lg space-y-3">
+              <span class="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-amber-950/60 text-amber-300 border border-amber-800/50"><i data-lucide="zap" aria-hidden="true" class="w-5 h-5"></i></span>
+              <h4 class="font-bold text-white">L'IA accélère le code, mais augmente les risques</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Les LLM produisent du code syntaxiquement valide mais sans garantie logique. Sans harnais de tests stricts, la dette technique et les bugs silencieux explosent en production.</p>
+            </article>
+            <article class="bg-premium-surface p-5 rounded-2xl border border-premium-border shadow-lg space-y-3">
+              <span class="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-rose-950/60 text-rose-300 border border-rose-800/50"><i data-lucide="triangle-alert" aria-hidden="true" class="w-5 h-5"></i></span>
+              <h4 class="font-bold text-white">Le piège des tests générés a posteriori</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Faire écrire les tests après coup par une IA peut créer une illusion de couverture et des faux positifs : le test valide alors le code existant plutôt que le besoin métier réel.</p>
+            </article>
+            <article class="bg-premium-surface p-5 rounded-2xl border border-premium-border shadow-lg space-y-3">
+              <span class="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-emerald-950/60 text-emerald-300 border border-emerald-800/50"><i data-lucide="git-branch" aria-hidden="true" class="w-5 h-5"></i></span>
+              <h4 class="font-bold text-white">Red-Green-Refactor couplé au CI/CD</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">L'intégration dans les pipelines (GitHub Actions, GitLab CI), avec PHPUnit 11/12 ou Pest, automatise la validation avant chaque déploiement.</p>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="veille-analyse" class="bg-premium-surface rounded-2xl border border-premium-border p-6 md:p-8 shadow-lg">
+          <h3 id="veille-analyse" class="text-xl font-bold text-white">Analyse personnelle &amp; impacts professionnels</h3>
+          <p class="mt-3 text-sm md:text-base leading-relaxed text-premium-textMuted">
+            Loin de rendre le TDD obsolète, l'IA générative en fait la compétence pivot du développeur moderne. Le rôle du technicien évolue : moins d'écriture de syntaxe basique (déléguée à l'IA) et davantage de conception formelle de spécifications et de cas limites (<em>edge cases</em>). En entreprise, cette discipline garantit le respect des principes SOLID, le découplage architectural et l'absence de régressions lors des maintenances.
+          </p>
+        </section>
+
+        <section aria-labelledby="veille-sources" class="space-y-4">
+          <div>
+            <h3 id="veille-sources" class="text-xl font-bold text-white">Sources principales</h3>
+            <p class="mt-1 text-sm text-premium-textMuted">Ressources consultées en novembre 2026.</p>
+          </div>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li class="bg-premium-surface p-5 rounded-2xl border border-premium-border">
+              <a href="https://tidyfirst.substack.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Kent Beck – <em>Tidy First? (Substack)</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-sm text-premium-textMuted">Conception incrémentale et TDD face aux LLM.</p>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté en novembre 2026</p>
+            </li>
+            <li class="bg-premium-surface p-5 rounded-2xl border border-premium-border">
+              <a href="https://martinfowler.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Martin Fowler – <em>Testing Guides</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-sm text-premium-textMuted">Pyramide de tests et limites des tests générés par IA.</p>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté en novembre 2026</p>
+            </li>
+            <li class="bg-premium-surface p-5 rounded-2xl border border-premium-border">
+              <a href="https://www.infoq.com/testing/" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">InfoQ – <em>Rubrique Testing &amp; QA</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-sm text-premium-textMuted">Retours d'expérience en entreprise sur la dette technique.</p>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté en novembre 2026</p>
+            </li>
+            <li class="bg-premium-surface p-5 rounded-2xl border border-premium-border">
+              <a href="https://phpunit.de/documentation.html" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Documentation officielle PHPUnit (Sebastian Bergmann)<span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-sm text-premium-textMuted">Évolutions des assertions et du mocking en CI/CD.</p>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté en novembre 2026</p>
+            </li>
+          </ul>
+        </section>
+
+        <aside aria-labelledby="veille-apport" class="rounded-2xl border border-purple-800/60 bg-gradient-to-br from-purple-950/60 to-indigo-950/40 p-6 md:p-8">
+          <h3 id="veille-apport" class="text-xl font-bold text-white">Ce que cette veille m'a apporté</h3>
+          <p class="mt-3 text-sm md:text-base leading-relaxed text-premium-textMuted">
+            « Cette veille m'a permis d'approfondir ma compréhension des exigences de qualité logicielle en entreprise au-delà de la simple écriture de code. J'ai appris à structurer une surveillance technique rigoureuse en croisant des flux RSS d'experts et des alertes ciblées, tout en développant mon esprit critique pour distinguer les effets de mode liés à l'IA des véritables standards de fiabilité en production. »
+          </p>
+        </aside>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- INITIALISATION DES ICONES -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
