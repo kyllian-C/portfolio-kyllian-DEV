@@ -281,9 +281,9 @@
             Le Test-Driven Development (TDD) à l'ère de l'IA générative : garde-fou indispensable ou pratique dépassée ?
           </h2>
           <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-premium-textMuted">
-            <p><span class="font-semibold text-white">Auteur associé au TDD :</span> Kent Beck</p>
-            <p><span class="font-semibold text-white">Domaine :</span> Génie logiciel / Qualité logicielle &amp; IA</p>
-            <p><span class="font-semibold text-white">Publication :</span> <time datetime="2026-11">Novembre 2026</time></p>
+            <p><span class="font-semibold text-white">Auteur :</span> Kyllian Chouquet</p>
+            <p><span class="font-semibold text-white">Domaine :</span> Génie logiciel &amp; Qualité logicielle</p>
+            <p><span class="font-semibold text-white">Mise à jour :</span> <time datetime="2026-11">Novembre 2026</time></p>
           </div>
           <ul aria-label="Mots-clés" class="mt-4 flex flex-wrap gap-2">
             <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">TDD</li>
@@ -315,7 +315,7 @@
             </div>
             <div class="bg-premium-surface p-5 rounded-2xl border border-premium-border space-y-2">
               <span class="inline-flex items-center gap-2 text-purple-300"><i data-lucide="bell" aria-hidden="true" class="w-5 h-5"></i><strong class="text-white">Alertes automatisées · Google Alerts</strong></span>
-              <p class="text-sm leading-relaxed text-premium-textMuted">Requêtes booléennes ciblées sur le TDD, le refactoring et l'impact des LLM sur les tests logiciels.</p>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Requêtes booléennes ciblées : <code class="text-purple-200">("Test-Driven Development" OR "TDD") AND ("refactoring" OR "clean code")</code> et <code class="text-purple-200">("TDD" OR "Test-Driven Development") AND ("generative AI" OR "Copilot" OR "LLM") AND "testing"</code>.</p>
             </div>
             <div class="bg-premium-surface p-5 rounded-2xl border border-premium-border space-y-2">
               <span class="inline-flex items-center gap-2 text-purple-300"><i data-lucide="users" aria-hidden="true" class="w-5 h-5"></i><strong class="text-white">Veille communautaire</strong></span>
@@ -326,30 +326,42 @@
 
         <section aria-labelledby="veille-evolutions" class="space-y-4">
           <div>
-            <h3 id="veille-evolutions" class="text-xl font-bold text-white">Synthèse des évolutions récentes</h3>
-            <p class="mt-1 text-sm text-premium-textMuted">Trois constats au croisement de l'IA générative et de la qualité logicielle.</p>
+            <h3 id="veille-evolutions" class="text-xl font-bold text-white">Analyse complète</h3>
+            <p class="mt-1 text-sm text-premium-textMuted">Quatre angles complémentaires pour évaluer la place du TDD en entreprise.</p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <article class="bg-premium-surface p-5 rounded-2xl border border-premium-border shadow-lg space-y-3">
               <span class="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-amber-950/60 text-amber-300 border border-amber-800/50"><i data-lucide="zap" aria-hidden="true" class="w-5 h-5"></i></span>
-              <h4 class="font-bold text-white">L'IA accélère le code, mais augmente les risques</h4>
-              <p class="text-sm leading-relaxed text-premium-textMuted">Les LLM produisent du code syntaxiquement valide mais sans garantie logique. Sans harnais de tests stricts, la dette technique et les bugs silencieux explosent en production.</p>
+              <h4 class="font-bold text-white">Impacts en entreprise</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Le développeur se concentre davantage sur la spécification formelle des tests que sur la saisie de syntaxe basique. Le TDD sécurise les pipelines CI/CD et contribue à réduire la dette technique grâce à des changements vérifiables.</p>
+            </article>
+            <article class="bg-premium-surface p-5 rounded-2xl border border-premium-border shadow-lg space-y-3">
+              <span class="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-emerald-950/60 text-emerald-300 border border-emerald-800/50"><i data-lucide="shield-check" aria-hidden="true" class="w-5 h-5"></i></span>
+              <h4 class="font-bold text-white">Avantages</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Le cycle Red-Green-Refactor limite les régressions en production, encourage une architecture modulaire cohérente avec les principes SOLID et fournit une documentation vivante du comportement applicatif.</p>
             </article>
             <article class="bg-premium-surface p-5 rounded-2xl border border-premium-border shadow-lg space-y-3">
               <span class="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-rose-950/60 text-rose-300 border border-rose-800/50"><i data-lucide="triangle-alert" aria-hidden="true" class="w-5 h-5"></i></span>
-              <h4 class="font-bold text-white">Le piège des tests générés a posteriori</h4>
-              <p class="text-sm leading-relaxed text-premium-textMuted">Faire écrire les tests après coup par une IA peut créer une illusion de couverture et des faux positifs : le test valide alors le code existant plutôt que le besoin métier réel.</p>
+              <h4 class="font-bold text-white">Limites et risques</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">La courbe d'apprentissage peut être exigeante et le temps initial paraît parfois plus long. Des tests générés a posteriori par l'IA risquent de produire de faux positifs ou d'être trop couplés à l'implémentation plutôt qu'au besoin métier.</p>
             </article>
             <article class="bg-premium-surface p-5 rounded-2xl border border-premium-border shadow-lg space-y-3">
-              <span class="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-emerald-950/60 text-emerald-300 border border-emerald-800/50"><i data-lucide="git-branch" aria-hidden="true" class="w-5 h-5"></i></span>
-              <h4 class="font-bold text-white">Red-Green-Refactor couplé au CI/CD</h4>
-              <p class="text-sm leading-relaxed text-premium-textMuted">L'intégration dans les pipelines (GitHub Actions, GitLab CI), avec PHPUnit 11/12 ou Pest, automatise la validation avant chaque déploiement.</p>
+              <span class="inline-flex w-9 h-9 items-center justify-center rounded-xl bg-indigo-950/60 text-indigo-300 border border-indigo-800/50"><i data-lucide="git-branch" aria-hidden="true" class="w-5 h-5"></i></span>
+              <h4 class="font-bold text-white">Perspectives</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Le TDD devient une compétence pivot pour encadrer les hallucinations des assistants IA (Copilot, Cursor, LLM) et maintenir une qualité logicielle continue.</p>
             </article>
           </div>
         </section>
 
+        <section aria-labelledby="veille-synthese" class="rounded-2xl border border-premium-border bg-premium-surface p-6 md:p-8 shadow-lg">
+          <h3 id="veille-synthese" class="text-xl font-bold text-white">Synthèse &amp; bilan</h3>
+          <p class="mt-3 text-sm md:text-base leading-relaxed text-premium-textMuted">
+            Face à l'accélération de l'écriture de code par les LLM, le cycle <em>Red-Green-Refactor</em>, associé à l'intégration continue (GitHub Actions, PHPUnit 11/12), constitue un contrat de validation indispensable avant tout déploiement.
+          </p>
+        </section>
+
         <section aria-labelledby="veille-analyse" class="bg-premium-surface rounded-2xl border border-premium-border p-6 md:p-8 shadow-lg">
-          <h3 id="veille-analyse" class="text-xl font-bold text-white">Analyse personnelle &amp; impacts professionnels</h3>
+          <h3 id="veille-analyse" class="text-xl font-bold text-white">Analyse personnelle</h3>
           <p class="mt-3 text-sm md:text-base leading-relaxed text-premium-textMuted">
             Loin de rendre le TDD obsolète, l'IA générative en fait la compétence pivot du développeur moderne. Le rôle du technicien évolue : moins d'écriture de syntaxe basique (déléguée à l'IA) et davantage de conception formelle de spécifications et de cas limites (<em>edge cases</em>). En entreprise, cette discipline garantit le respect des principes SOLID, le découplage architectural et l'absence de régressions lors des maintenances.
           </p>
@@ -358,28 +370,28 @@
         <section aria-labelledby="veille-sources" class="space-y-4">
           <div>
             <h3 id="veille-sources" class="text-xl font-bold text-white">Sources principales</h3>
-            <p class="mt-1 text-sm text-premium-textMuted">Ressources consultées en novembre 2026.</p>
+            <p class="mt-1 text-sm text-premium-textMuted">Articles retenus et dates de consultation.</p>
           </div>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <li class="bg-premium-surface p-5 rounded-2xl border border-premium-border">
-              <a href="https://tidyfirst.substack.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Kent Beck – <em>Tidy First? (Substack)</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
-              <p class="mt-2 text-sm text-premium-textMuted">Conception incrémentale et TDD face aux LLM.</p>
-              <p class="mt-2 text-xs text-premium-textMuted">Consulté en novembre 2026</p>
+              <a href="https://tidyfirst.substack.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Kent Beck (<em>Tidy First? / Substack</em>) – <em>Augmented Coding: Beyond the Vibes</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-sm text-premium-textMuted">Publié le 15 janvier 2025.</p>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté le 12/01/2026</p>
             </li>
             <li class="bg-premium-surface p-5 rounded-2xl border border-premium-border">
-              <a href="https://martinfowler.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Martin Fowler – <em>Testing Guides</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
-              <p class="mt-2 text-sm text-premium-textMuted">Pyramide de tests et limites des tests générés par IA.</p>
-              <p class="mt-2 text-xs text-premium-textMuted">Consulté en novembre 2026</p>
+              <a href="https://www.infoq.com/testing/" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">InfoQ (<em>Testing &amp; QA</em>) – <em>Enterprise Case Study: Reducing Technical Debt with TDD</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-sm text-premium-textMuted">Publié le 22 février 2025.</p>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté le 20/01/2026</p>
             </li>
             <li class="bg-premium-surface p-5 rounded-2xl border border-premium-border">
-              <a href="https://www.infoq.com/testing/" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">InfoQ – <em>Rubrique Testing &amp; QA</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
-              <p class="mt-2 text-sm text-premium-textMuted">Retours d'expérience en entreprise sur la dette technique.</p>
-              <p class="mt-2 text-xs text-premium-textMuted">Consulté en novembre 2026</p>
+              <a href="https://martinfowler.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Martin Fowler (<em>martinfowler.com</em>) – <em>Testing Guides &amp; AI-Generated Tests Analysis</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-sm text-premium-textMuted">Publié le 10 mars 2025.</p>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté le 15/01/2026</p>
             </li>
             <li class="bg-premium-surface p-5 rounded-2xl border border-premium-border">
-              <a href="https://phpunit.de/documentation.html" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Documentation officielle PHPUnit (Sebastian Bergmann)<span class="sr-only"> (ouvre un nouvel onglet)</span></a>
-              <p class="mt-2 text-sm text-premium-textMuted">Évolutions des assertions et du mocking en CI/CD.</p>
-              <p class="mt-2 text-xs text-premium-textMuted">Consulté en novembre 2026</p>
+              <a href="https://phpunit.de/documentation.html" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">GitHub / PHPUnit (Sebastian Bergmann) – <em>PHPUnit 11 &amp; 12 Release Notes &amp; Documentation</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-sm text-premium-textMuted">Publié le 5 février 2026.</p>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté le 02/02/2026</p>
             </li>
           </ul>
         </section>
@@ -390,6 +402,98 @@
             « Cette veille m'a permis d'approfondir ma compréhension des exigences de qualité logicielle en entreprise au-delà de la simple écriture de code. J'ai appris à structurer une surveillance technique rigoureuse en croisant des flux RSS d'experts et des alertes ciblées, tout en développant mon esprit critique pour distinguer les effets de mode liés à l'IA des véritables standards de fiabilité en production. »
           </p>
         </aside>
+      </article>
+
+      <article aria-labelledby="veille-green-title" class="space-y-5 border-t border-premium-border pt-8">
+        <header class="border-b border-premium-border pb-5">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-premium-card text-purple-200 text-xs font-bold mb-3 border border-premium-border">
+            Veille technologique · Numérique responsable
+          </div>
+          <h2 id="veille-green-title" class="text-2xl md:text-3xl font-bold text-white leading-tight">
+            Le Green Coding : comment réduire l'empreinte environnementale des applications dès leur conception ?
+          </h2>
+          <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-premium-textMuted">
+            <p><span class="font-semibold text-white">Auteur :</span> Kyllian Chouquet</p>
+            <p><span class="font-semibold text-white">Domaine :</span> Développement durable &amp; Numérique responsable (Green IT)</p>
+            <p><span class="font-semibold text-white">Mise à jour :</span> <time datetime="2026-11">Novembre 2026</time></p>
+          </div>
+          <ul aria-label="Mots-clés du sujet Green Coding" class="mt-4 flex flex-wrap gap-2">
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">Green Coding</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">Éco-conception</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">Green IT</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">Sobriété numérique</li>
+            <li class="px-2.5 py-1 rounded-lg bg-premium-card border border-premium-border text-xs font-semibold text-purple-200">Performance Web</li>
+          </ul>
+        </header>
+
+        <section aria-labelledby="veille-green-question" class="rounded-2xl border border-purple-800/60 bg-purple-950/30 p-5 md:p-6">
+          <h3 id="veille-green-question" class="text-xs font-bold uppercase tracking-wider text-purple-300">Problématique</h3>
+          <blockquote class="mt-3 text-base md:text-lg font-semibold leading-relaxed text-white">
+            « Face à l'explosion de la consommation énergétique des data centers et du trafic web, quelles pratiques de développement permettent de concevoir des logiciels plus sobres et performants ? »
+          </blockquote>
+        </section>
+
+        <section aria-labelledby="veille-green-method" class="rounded-2xl border border-premium-border bg-premium-surface p-5 md:p-6">
+          <h3 id="veille-green-method" class="text-lg font-bold text-white">Collecte</h3>
+          <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <p class="rounded-xl border border-premium-border bg-premium-card p-4 text-sm leading-relaxed text-premium-textMuted">
+              <strong class="text-white">Google Alerts :</strong> suivi de la requête <code class="text-purple-200">"Green coding" OR "éco-conception logicielle"</code>.
+            </p>
+            <p class="rounded-xl border border-premium-border bg-premium-card p-4 text-sm leading-relaxed text-premium-textMuted">
+              <strong class="text-white">Flux RSS :</strong> suivi des publications du collectif GreenIT.fr et de l'INR (Institut du Numérique Responsable).
+            </p>
+          </div>
+        </section>
+
+        <section aria-labelledby="veille-green-analysis" class="space-y-3">
+          <h3 id="veille-green-analysis" class="text-lg font-bold text-white">Analyse</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <article class="rounded-2xl border border-premium-border bg-premium-surface p-4 space-y-2">
+              <h4 class="font-bold text-white">Impacts en entreprise</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Intégrer la sobriété au cahier des charges, auditer l'empreinte carbone des architectures cloud et optimiser les requêtes de bases de données et d'API.</p>
+            </article>
+            <article class="rounded-2xl border border-premium-border bg-premium-surface p-4 space-y-2">
+              <h4 class="font-bold text-white">Avantages</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Réduire les coûts d'hébergement et de bande passante, améliorer les temps de chargement (UX/SEO) et prolonger la durée de vie des terminaux clients.</p>
+            </article>
+            <article class="rounded-2xl border border-premium-border bg-premium-surface p-4 space-y-2">
+              <h4 class="font-bold text-white">Limites et risques</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Les indicateurs restent difficiles à mesurer en continu ; la démarche peut sembler chronophage aux équipes et devenir du « greenwashing » si l'optimisation est superficielle.</p>
+            </article>
+            <article class="rounded-2xl border border-premium-border bg-premium-surface p-4 space-y-2">
+              <h4 class="font-bold text-white">Perspectives</h4>
+              <p class="text-sm leading-relaxed text-premium-textMuted">Déployer des outils d'éco-scoring dans les pipelines CI/CD (EcoIndex, GreenFrame) et renforcer les compétences des développeurs face aux réglementations comme la loi REEN.</p>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="veille-green-synthesis" class="rounded-2xl border border-purple-800/60 bg-gradient-to-br from-purple-950/60 to-indigo-950/40 p-5 md:p-6">
+          <h3 id="veille-green-synthesis" class="text-lg font-bold text-white">Synthèse &amp; apport personnel</h3>
+          <p class="mt-3 text-sm leading-relaxed text-premium-textMuted">
+            Le Green Coding consiste à optimiser l'algorithmique, limiter le poids des ressources front-end et éviter les traitements inutiles côté serveur afin d'allier performance technique et sobriété énergétique.
+          </p>
+          <p class="mt-3 border-t border-premium-border pt-3 text-sm leading-relaxed text-premium-textMuted">
+            « Ce second axe de veille m'a sensibilisé à l'impact matériel du code que j'écris au quotidien. J'ai découvert qu'un code sobre et bien architecturé est non seulement plus écologique, mais aussi plus rapide et moins coûteux à héberger en production. »
+          </p>
+        </section>
+
+        <section aria-labelledby="veille-green-sources" class="space-y-3">
+          <h3 id="veille-green-sources" class="text-lg font-bold text-white">Sources</h3>
+          <ul class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <li class="rounded-2xl border border-premium-border bg-premium-surface p-4">
+              <a href="https://www.greenit.fr" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">GreenIT.fr – <em>Bonnes pratiques d'éco-conception web : le référentiel des 115 bonnes pratiques</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté le 18/01/2026</p>
+            </li>
+            <li class="rounded-2xl border border-premium-border bg-premium-surface p-4">
+              <a href="https://institutnr.org" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Institut du Numérique Responsable (INR) – <em>Guide de référence de l'éco-conception de services numériques</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté le 25/01/2026</p>
+            </li>
+            <li class="rounded-2xl border border-premium-border bg-premium-surface p-4">
+              <a href="https://greensoftware.foundation" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded">Green Software Foundation – <em>Principles of Green Software Engineering</em><span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+              <p class="mt-2 text-xs text-premium-textMuted">Consulté le 04/02/2026</p>
+            </li>
+          </ul>
+        </section>
       </article>
     </section>
 
